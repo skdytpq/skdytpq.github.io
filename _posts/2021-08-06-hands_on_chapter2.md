@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "핸즈온 머신러닝 2챕터 실습 코드"
+---
+
+I hope you like it!
 ```python
 import pandas as pd
 pd.options.display.float_format = '{:.2f}'.format

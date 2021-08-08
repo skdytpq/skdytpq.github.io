@@ -49,5 +49,5 @@ docs-ko:
   - title:      머신러닝 with python
     children:
       - title:  housepredict
-        url:    https://skdytpq.github.io/hands_on_chapter2/
+        url:    https://skdytpq.github.io/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%8B%A4%EC%8A%B5/handson/
         

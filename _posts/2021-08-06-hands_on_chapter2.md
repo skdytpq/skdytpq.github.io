@@ -1,12 +1,12 @@
 ---
-title: p-value의 의미
+title: 핸즈온실습코드
 sidebar:
   nav: docs-ko
 aside:
   toc: True
 categories:
   - 파이썬실습
-key: 20210808
+key: 20210806
 
 
 ---

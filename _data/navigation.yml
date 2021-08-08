@@ -4,6 +4,8 @@ main:
     url: https://skdytpq.github.io/
   - title: "About"
     url: /about/
+  - title: "Categories"
+    url: /categories/
 
 
 header:

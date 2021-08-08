@@ -15,3 +15,7 @@ header:
       children:
         - title:  벡터의 기본 연산(상수배, 덧셈)
           url:    https://skdytpq.github.io/3rdpre/
+    - title:      수리통계
+      children:
+        -title: 수리통계의 시작.
+         url:  

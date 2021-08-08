@@ -1,21 +1,39 @@
-# main links
 header:
-  - title: "HOME"
+
+  - titles:
+      ko      : &KO       블로그 사용법
+      ko-KR   : *KO
     url: https://skdytpq.github.io/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
-  docs-ko:
-    - title:      기초 선형대수학 이론
-      children:
-        - title:  벡터의 기본 연산(상수배, 덧셈)
-          url:    https://skdytpq.github.io/3rdpre/
-    - title:      수리통계
-      children:
-        -title: 수리통계의 시작.
-         url:  
+
+  - titles:
+      en      : &EN       About
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  关于
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  關於
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       저자 소개
+      ko-KR   : *KO
+    url: https://skdytpq.github.io/
+    
+
+    
+  - titles:
+      ko      : &KO       Github 소스코드
+      ko-KR   : *KO
+    url: https://skdytpq.github.io/
+
+ 
+
+docs-ko:
+  - title:      기초 선형대수학 이론
+    children:
+      - title:  벡터의 기본 연산(상수배, 덧셈)
+        url:    https://skdytpq.github.io/
+      

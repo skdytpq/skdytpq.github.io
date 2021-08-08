@@ -1,6 +1,16 @@
 ---
-layout: post
-title:  "핸즈온 머신러닝 2챕터 실습 코드"
+---
+title: 핸즈온 챕터 2
+sidebar:
+  nav: docs-ko
+aside:
+  toc: False
+categories:
+  - 파이썬실습
+key: 20210808
+
+
+---
 ---
 
 I hope you like it!

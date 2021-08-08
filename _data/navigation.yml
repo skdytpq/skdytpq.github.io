@@ -1,3 +1,11 @@
+
+main:
+  - title: "블로그 방문하기"
+    url: https://skdytpq.github.io/
+  - title: "About"
+    url: /about/
+
+
 header:
 
   - titles:

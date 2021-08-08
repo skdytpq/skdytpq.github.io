@@ -1,4 +1,4 @@
----
+
 ---
 title: 핸즈온 챕터 2
 sidebar:
@@ -9,9 +9,8 @@ categories:
   - 파이썬실습
 key: 20210808
 
+---
 
----
----
 
 I hope you like it!
 ```python

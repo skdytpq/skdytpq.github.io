@@ -1,13 +1,13 @@
-
 ---
-title: 핸즈온 챕터 2
+title: p-value의 의미
 sidebar:
   nav: docs-ko
 aside:
-  toc: False
+  toc: True
 categories:
   - 파이썬실습
 key: 20210808
+
 
 ---
 

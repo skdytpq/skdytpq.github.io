@@ -46,4 +46,8 @@ docs-ko:
     children:
       - title:  벡터의 기본 연산(상수배, 덧셈)
         url:    https://skdytpq.github.io/
-      
+  - title:      머신러닝 with python
+    children:
+      - title:  housepredict
+        url:    https://skdytpq.github.io/hands_on_chapter2/
+        

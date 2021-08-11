@@ -45,5 +45,5 @@ docs-ko:
   - title:      머신러닝 with python
     children:
       - title:  Logistic Regression
-        url:    https://github.com/skdytpq/skdytpq.github.io/blob/master/_posts/2021-08-11-logistic.md
+        url:    https://skdytpq.github.io/%EA%B8%B0%EC%B4%88%ED%86%B5%EA%B3%84/logistic/
         

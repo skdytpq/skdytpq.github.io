@@ -42,12 +42,8 @@ header:
  
 
 docs-ko:
-  - title:      기초 선형대수학 이론
-    children:
-      - title:  벡터의 기본 연산(상수배, 덧셈)
-        url:    https://skdytpq.github.io/%EA%B8%B0%EC%B4%88%ED%86%B5%EA%B3%84/3rdpre/
   - title:      머신러닝 with python
     children:
-      - title:  housepredict
-        url:    https://skdytpq.github.io/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%8B%A4%EC%8A%B5/handson/
+      - title:  Logistic Regression
+        url:    https://github.com/skdytpq/skdytpq.github.io/blob/master/_posts/2021-08-11-logistic.md
         

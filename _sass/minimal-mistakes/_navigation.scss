@@ -506,7 +506,7 @@
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
-  background-color: $dark;
+  background-color: mix(white, #000, 20%);
   border: 1px solid $border-color;
   border-radius: $border-radius;
   -webkit-box-shadow: $box-shadow;
@@ -528,7 +528,7 @@
 
 .toc__menu {
   margin: 0;
-  padding: 2;
+  padding: 0;
   width: 100%;
   list-style: none;
   font-size: $type-size-6;

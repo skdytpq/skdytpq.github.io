@@ -44,9 +44,8 @@ header:
 docs-ko:
   - title:      머신러닝 with python
     children:
-      - title:  Logistic Regression
-        url:    https://skdytpq.github.io/%EA%B8%B0%EC%B4%88%ED%86%B5%EA%B3%84/logistic/
-        
-      - title:  Linear Regression
+      - title:  로지스틱 회귀
+        url:    https://skdytpq.github.io/%EA%B8%B0%EC%B4%88%ED%86%B5%EA%B3%84/logistic/        
+      - title:  선형회귀
         url:    https://skdytpq.github.io/%EA%B8%B0%EC%B4%88%ED%86%B5%EA%B3%84/linearregression/
         

@@ -197,7 +197,7 @@ for epoch in range(n_epochs):
         theta = theta - eta*gradeints
 ```
 
- 위 코드에서 우리는 xi,yi 에 random한 index를 부여한 후 그 곳에서 gradient를 계산한 후 theta값을 조정해준다. 이 과정은 데이터의 수 m번을 반복하게 되는데 그 과정마다 xi,yi의 값은 또 random하게 배정되며 theta 는 배정된 xi,yi의 gradient를 토대로 업데이트 된다.
+ 위 코드에서 우리는 xi,yi 에 random한 index를 부여하고 그 곳에서 gradient를 계산한 후 theta값을 조정해준다. 이 과정은 데이터의 수 m번을 반복하게 되는데 그 과정마다 xi,yi의 값은 또 random하게 배정되며 theta 는 배정된 xi,yi의 gradient를 토대로 업데이트 된다.
 
 일반적으로 한 반복에서 m번 반복되며 이때 각 반복을 에포크(epoch)라고 한다. 배치 경사하강법은 전체 훈련세트에 대해 1000번 반복한다고 한다면 이 코드에서는 훈련세트에서 50번만 반복하게 된다. (보통 데이터가 크다면 이 epoch는 1~10번 사이이다.)
 

@@ -26,10 +26,11 @@ gradient descent는 기본적으로 함수의 최솟값을 찾는 것이 목적�
 그렇기 때문에 보통 함수의 최솟값을 찾을 때 경사하강법과 같은 iterative한 방법을 많이 쓴다.
 
 # 경사하강법?
-https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/lin_reg.mp4
-<iframe src="https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/lin_reg.mp4" width="420" height = "320" frameborder="0"></iframe>
-linearregression에서 iteration에 따른 기울기의 변화
-
+<p align = "center">
+  <img width = "600" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/lin_reg.gif?raw=true">
+  <br>
+  경사하강법을 이용한 선형회귀의 기울기 변화
+</p>
 
 ## 경사하강법과 learning rate
 

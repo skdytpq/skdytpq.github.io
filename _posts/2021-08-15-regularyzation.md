@@ -66,7 +66,7 @@ $=E\left[X^2\right]-E\left[X\right]^2$​​​ <br>우선 위식과 같이 분�
 
 
 <p align = "center">
-  <img width = 500" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/regular_2.png?raw=true">
+  <img width = "500" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/regular_2.png?raw=true">
   <br>
   그림 2. 데이터가 비선형이다!
 </p>

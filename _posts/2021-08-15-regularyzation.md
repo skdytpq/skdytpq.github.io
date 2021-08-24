@@ -135,8 +135,7 @@ ridge 회귀는 간단히 비용함수에 $\alpha\sum_i^n\theta_i^2$ 항이 추�
 
 
 
-$=(\sum_i^nx^2_{i1})\theta_0^2 + (\sum_i^2x_{i2}^2)\theta_1^2 $<br>  
-$+ 2(\sum_i^nx_{i1}x_{i2})\theta_0\theta_1 -2(\sum_i^ny_ix_{i1})\theta_0$
+$=(\sum_i^nx^2_{i1})\theta_0^2 + (\sum_i^2x_{i2}^2)\theta_1^2 + 2(\sum_i^nx_{i1}x_{i2})\theta_0\theta_1 -2(\sum_i^ny_ix_{i1})\theta_0$
 
 
 

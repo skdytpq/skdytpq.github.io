@@ -64,6 +64,7 @@ $=E\left[X^2\right]-E\left[X\right]^2$​​​ <br>우선 위식과 같이 분�
 
 우리가 가지고있는 데이터가 단순한 직선보다 복잡한 형태라면 어떨까? 
 
+
 <p align = "center">
   <img width = 500" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/regular_2.png?raw=true">
   <br>

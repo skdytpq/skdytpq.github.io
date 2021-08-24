@@ -116,9 +116,9 @@ $=E\left[X^2\right]-E\left[X\right]^2$​​​ <br>우선 위식과 같이 분�
 
 ridge 회귀는 간단히 비용함수에 $\alpha\sum_i^n\theta_i^2$ 항이 추가된 선형 회귀이다. 여기서 $\alpha$ 는 하이퍼파라미터로 모델을 얼마나 규제할지에 대한 강도이다. 비용함수의 전체적인 형태를 보자면<br>$J(\theta) = MSE(\theta) + \alpha\frac{1}{2}\sum_i^n \theta_i^2$​ 인데 일반적인 선형 회귀 모델의 비용함수인 $MSE(\theta)$​ 는 오차 제곱 합이며 이 식에 각 $\theta_i$ 의 제곱합을 추가로 줘서 오차 제곱합과 동시에 각 $\theta_i$의 값도 고려하여 최적의 $\theta$​ 값을 찾는다.
 
-여기서 $w$ 를 특성의 가중치 벡터$(\theta_i,\dots, \theta_i)$라고 정의하면 규제항은 $\frac{1}{2}(||w||)^2$​ 라고 할 수 있다. 즉, $w$ 벡터의 $l_2$​ norm이다. 이 것은 Ridge의 큰 특징인데, 이후 이야기하는 Lasso 와 비교하여 자세히 이야기 해보겠다.
+<br>여기서 $w$ 를 특성의 가중치 벡터$(\theta_i,\dots, \theta_i)$라고 정의하면 규제항은 $\frac{1}{2}(||w||)^2$라고 할 수 있다. 즉, $w$ 벡터의 $l_2$norm이다. 이 것은 Ridge의 큰 특징인데, 이후 이야기하는 Lasso 와 비교하여 자세히 이야기 해보겠다.
 
- $\alpha$ 값은 이러한 규제의 정도인데, 만약 $\alpha$ 값이 매우 크다면 비용 함수를 최소화 하기 위해 회귀 모델의 $\theta$​ 의 값들은 점점 작아져 $\alpha$가 계속해서 커진다면 회귀 직선은 일직선에 가까워질 것이다. 
+ $\alpha$ 값은 이러한 규제의 정도인데, 만약 $\alpha$ 값이 매우 크다면 비용 함수를 최소화 하기 위해 회귀 모델의 $\theta$ 의 값들은 점점 작아져 $\alpha$가 계속해서 커진다면 회귀 직선은 일직선에 가까워질 것이다. 
 
 <p align = "center">
   <img width = "600" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/ridge_2.png?raw=true">
@@ -133,7 +133,7 @@ ridge 회귀는 간단히 비용함수에 $\alpha\sum_i^n\theta_i^2$ 항이 추�
 
 
 
-$=(\sum_i^nx^2_{i1})\theta_0^2 + (\sum_i^2x_{i2}^2)\theta_1^2 + 2(\sum_i^nx_{i1}x_{i2})\theta_0\theta_1 -2(\sum_i^ny_ix_{i1})\theta_0$​​ 
+$=(\sum_i^nx^2_{i1})\theta_0^2 + (\sum_i^2x_{i2}^2)\theta_1^2$ + $2(\sum_i^nx_{i1}x_{i2})\theta_0\theta_1 -2(\sum_i^ny_ix_{i1})\theta_0$
 
 
 
@@ -165,11 +165,12 @@ SGDRegressor(penalty = 'l2')
 
 ## Lasso
 
-Lasso 회귀도 선형 회귀의 또 다른 규제 버전이다. 릿지 회귀와 다른점은 비용함수에 l1 norm을 사용한다는 것인데, 식으로 나타내면<br>$J(\theta) = MSE(\theta) + \alpha\sum_i^n|\theta_i|$이다. 즉, 절대값을 씌운 것이다.
+Lasso 회귀도 선형 회귀의 또 다른 규제 버전이다. 릿지 회귀와 다른점은 비용함수에 l1 norm을 사용한다는 것인데, 식으로 나타내면 $J(\theta) = MSE(\theta) + \alpha\sum_i^n|\theta_i|$이다. 
+즉, 절대값을 씌운 것이다.
 
 이 라쏘 회귀의 중요한 특징은 덜 중요한 특성의 가중치를 제거하려 한다는 것이다. 하지만 Lasso는 안타깝게도 $\theta_i = 0$​ 인 지점에서 미분이 불가능하기 때문에 최소값을 직접 찾는 것은 불가능 하기 때문에 수치 최적화를 통해 구해야 한다.​ 하지만 $\theta_i = 0$일 때 subgradient vector 을 사용하면 경사 하강법을 적용하는 데 문제가 되지 않는다.
 
-$sign(\theta_i) = \begin{cases}-1~~\theta_i<0\\0~~~~~\theta_i=0\\ 1 ~~~~~\theta_i >0  \end{cases}$​​ 의 식을 $g(\theta,J) = \nabla_{\theta}MSE(\theta) + \alpha(sign(\theta_1),\dots,sign(\theta_n))$​​ 의 식에 사용하면 모든 경우에서 함수값을 갖기 때문에 ​​무리 없이 경사 하강법을 적용하여 Lasso에서의 $\theta$를 찾을 수 있다.
+$sign(\theta_i) = \begin{cases}-1~~\theta_i<0\\0\theta_i=0\\ 1 \theta_i >0  \end{cases}$ 의 식을 $g(\theta,J) = \nabla_{\theta}MSE(\theta)$ +< $\alpha(sign(\theta_1),\dots,sign(\theta_n))$​​ 의 식에 사용하면 모든 경우에서 함수값을 갖기 때문에 ​​무리 없이 경사 하강법을 적용하여 Lasso에서의 $\theta$를 찾을 수 있다.
 
 ## Lasso 의 기하학적 의미
 

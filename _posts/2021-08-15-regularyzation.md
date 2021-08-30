@@ -205,7 +205,9 @@ $MSE(\theta_0,\theta_1)$
 
 = $\sum_i^n (y_i - \theta_0x_{i1}-\theta_1x_{i2})^2$
 
-$=(\sum_i^nx^2_{i1})\theta_0^2 + (\sum_i^2x_{i2}^2)\theta_1^2 + 2(\sum_i^nx_{i1}x_{i2})\theta_0\theta_1 -2(\sum_i^ny_ix_{i1})\theta_0$
+$=(\sum_i^nx^2_{i1})\theta_0^2 + (\sum_i^2x_{i2}^2)\theta_1^2$ 
+
+$+ 2(\sum_i^nx_{i1}x_{i2})\theta_0\theta_1 -2(\sum_i^ny_ix_{i1})\theta_0$
 
 $-2(\sum_i^2y_ix_{i2})\theta_1 + \sum_i^ny_i^2$ 로 풀어쓸 수 있는데
 
@@ -249,13 +251,13 @@ Lasso 회귀도 선형 회귀의 또 다른 규제 버전이다.
 
 릿지 회귀와 다른점은 비용함수에 l1 norm을 사용한다는 것인데, 
 
-식으로 나타내면 <br>$J(\theta) = MSE(\theta) + \alpha\sum_i^n\vert\theta_i\vert$에서 볼 수 잇듯 규제항에 절대값을 씌운 것이다.
+식으로 나타내면 $J(\theta) = MSE(\theta) + \alpha\sum_i^n\vert\theta_i\vert$에서 볼 수 잇듯 규제항에 절대값을 씌운 것이다.
 
 이 라쏘 회귀의 중요한 특징은 덜 중요한 특성의 가중치를 제거하려 한다는 것이다. 
 
 하지만 Lasso는 안타깝게도 $\theta_i = 0$​ 인 지점에서 미분이 불가능하기 때문에 최소값을 직접 찾는 것은 불가능 하기 때문에 수치 최적화를 통해 구해야 한다.
 
-​ 하지만 $\theta_i = 0$일 때 subgradient vector 을 사용하면 경사 하강법을 적용하는 데 문제가 되지 않는다.
+하지만 $\theta_i = 0$일 때 subgradient vector 을 사용하면 경사 하강법을 적용하는 데 문제가 되지 않는다.
 
 $sign(\theta_i) = \begin{cases}-1 \;\; \theta_i<0 \newline 0 \;\;\theta_i=0\\ \newline 1 \;\;\theta_i >0  \end{cases}$ 의 식을 
 $g(\theta,J) = \nabla_{\theta}MSE(\theta) + \alpha(sign(\theta_1),\dots,sign(\theta_n))$​​ 

@@ -245,7 +245,7 @@ SGDRegressor(penalty = 'l2')
 
 Lasso 회귀도 선형 회귀의 또 다른 규제 버전이다. 
 
-릿지 회귀와 다른점은 비용함수에 l1 norm을 사용한다는 것인데, 식으로 나타내면 <br>$J(\theta) = MSE(\theta) + \alpha\sum_i^n|\theta_i|$에서 볼 수 잇듯 규제항에 절대값을 씌운 것이다.
+릿지 회귀와 다른점은 비용함수에 l1 norm을 사용한다는 것인데, 식으로 나타내면 <br>$$J(\theta) = MSE(\theta) + \alpha\sum_i^n|\theta_i|$$에서 볼 수 잇듯 규제항에 절대값을 씌운 것이다.
 
 이 라쏘 회귀의 중요한 특징은 덜 중요한 특성의 가중치를 제거하려 한다는 것이다. 
 

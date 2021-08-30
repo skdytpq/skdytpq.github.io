@@ -175,7 +175,7 @@ ridge 회귀는 간단히 비용함수에 $\alpha\sum_i^n\theta_i^2$ 항이 추�
 
 이 식에 각 $\theta_i$ 의 제곱합을 추가로 줘서 오차 제곱합과 동시에 각 $\theta_i$의 값도 고려하여 최적의 $\theta$​ 값을 찾는다.
 
-여기서 $w$ 를 특성의 가중치 벡터$(\theta_i,\dots, \theta_i)$라고 정의하면 규제항은 $ \frac{1}{2}(\left|\left|w\right|\right|)^2 $라고 할 수 있다.
+여기서 $w$ 를 특성의 가중치 벡터$(\theta_i,\dots, \theta_i)$라고 정의하면 규제항은 $ \frac{1}{2}(\Vertw\Vert)^2 $라고 할 수 있다.
 
 즉, $w$ 벡터의 $l_2$norm이다. 
 
@@ -247,7 +247,7 @@ Lasso 회귀도 선형 회귀의 또 다른 규제 버전이다.
 
 릿지 회귀와 다른점은 비용함수에 l1 norm을 사용한다는 것인데, 
 
-식으로 나타내면 <br>$$J(\theta) = MSE(\theta) + \alpha\sum_i^n~\left|\theta_i\right|$$에서 볼 수 잇듯 규제항에 절대값을 씌운 것이다.
+식으로 나타내면 <br>$$J(\theta) = MSE(\theta) + \alpha\sum_i^n\vert\theta_i\vert$$에서 볼 수 잇듯 규제항에 절대값을 씌운 것이다.
 
 이 라쏘 회귀의 중요한 특징은 덜 중요한 특성의 가중치를 제거하려 한다는 것이다. 
 

@@ -203,9 +203,11 @@ ridge 회귀는 간단히 비용함수에 $\alpha\sum_i^n\theta_i^2$ 항이 추�
 
 $MSE(\theta_0,\theta_1)$
 
-= $\sum_i^n (y_i - \theta_0x_{i1}-\theta_1x_{i2})^2 +$
+= $\sum_i^n (y_i - \theta_0x_{i1}-\theta_1x_{i2})^2$
 
-$(\sum_i^nx^2_{i1})\theta_0^2 + (\sum_i^2x_{i2}^2)\theta_1^2+2(\sum_i^nx_{i1}x_{i2})\theta_0\theta_1 -2(\sum_i^ny_ix_{i1})\theta_0-2(\sum_i^2y_ix_{i2})\theta_1 + \sum_i^ny_i^2$  로 풀어쓸 수 있는데 
+$=(\sum_i^nx^2_{i1})\theta_0^2 + (\sum_i^2x_{i2}^2)\theta_1^2 + 2(\sum_i^nx_{i1}x_{i2})\theta_0\theta_1 -2(\sum_i^ny_ix_{i1})\theta_0$
+
+$-2(\sum_i^2y_ix_{i2})\theta_1 + \sum_i^ny_i^2$ 로 풀어쓸 수 있는데
 
 $MSE(\theta_0,\theta_1)$ 은 $A\theta_0^2 + B\theta_0\theta_1 + C\theta_1^2 + D\theta_0 + E\theta_1 + F $형태의 **원추곡선**이 된다.
 

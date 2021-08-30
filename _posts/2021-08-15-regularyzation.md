@@ -22,7 +22,7 @@ use_math: true
 
 ## 편향과 분산에 대한 수식
 
-$MSE_{(training)} = (Y - \hat{Y})^2$ 간단한 수식으로 이렇게 나타낼 수 있는데, 이것에 대한 기댓값을 전개한다면 $Expected MSE = E[(Y-\hat{Y})^2|X]$ 의 형태가 된다.
+<br>$MSE_{(training)} = (Y - \hat{Y})^2$ 간단한 수식으로 이렇게 나타낼 수 있는데, 이것에 대한 기댓값을 전개한다면 $Expected MSE = E[(Y-\hat{Y})^2|X]$ 의 형태가 된다.
 
 우선 이식을 보기 전 유도를 위한 분산의 정의와 가정에 대해 살펴보자.
 <br>
@@ -166,6 +166,7 @@ $=E\left[X^2\right]-E\left[X\right]^2$​​​ <br>우선 위식과 같이 분�
 
 # Ridge
 
+
 ridge 회귀는 간단히 비용함수에 $\alpha\sum_i^n\theta_i^2$ 항이 추가된 선형 회귀이다. 
 
 여기서 $\alpha$ 는 하이퍼파라미터로 모델을 얼마나 규제할지에 대한 강도이다. 
@@ -174,7 +175,7 @@ ridge 회귀는 간단히 비용함수에 $\alpha\sum_i^n\theta_i^2$ 항이 추�
 
 이 식에 각 $\theta_i$ 의 제곱합을 추가로 줘서 오차 제곱합과 동시에 각 $\theta_i$의 값도 고려하여 최적의 $\theta$​ 값을 찾는다.
 
-여기서 $w$ 를 특성의 가중치 벡터$(\theta_i,\dots, \theta_i)$라고 정의하면 규제항은 $\frac{1}{2}(||w||)^2$라고 할 수 있다.
+<br>여기서 $w$ 를 특성의 가중치 벡터$(\theta_i,\dots, \theta_i)$라고 정의하면 규제항은 $\frac{1}{2}(||w||)^2$라고 할 수 있다.
 
 즉, $w$ 벡터의 $l_2$norm이다. 
 
@@ -196,6 +197,7 @@ ridge 회귀는 간단히 비용함수에 $\alpha\sum_i^n\theta_i^2$ 항이 추�
 그렇기 때문에 $\alpha$​가 100일 때와 $\alpha$​​가 1일 때 더 수평선 형태가 되는 것이다.
 
 # Ridge의 기하학적 의미
+
 
 만약 우리가 찾아야하는 회귀계수 벡터를  $\theta_0 ,\theta_1$ 라고 둔다면
 
@@ -240,11 +242,10 @@ SGDRegressor(penalty = 'l2')
 
 # Lasso
 
+
 Lasso 회귀도 선형 회귀의 또 다른 규제 버전이다. 
 
-릿지 회귀와 다른점은 비용함수에 l1 norm을 사용한다는 것인데, 식으로 나타내면 $J(\theta) = MSE(\theta) + \alpha\sum_i^n|\theta_i|$이다. 
-
-즉, 절대값을 씌운 것이다.
+릿지 회귀와 다른점은 비용함수에 l1 norm을 사용한다는 것인데, 식으로 나타내면 <br>$J(\theta) = MSE(\theta) + \alpha\sum_i^n|\theta_i|$에서 볼 수 잇듯 규제항에 절대값을 씌운 것이다.
 
 이 라쏘 회귀의 중요한 특징은 덜 중요한 특성의 가중치를 제거하려 한다는 것이다. 
 
@@ -258,6 +259,7 @@ $g(\theta,J) = \nabla_{\theta}MSE(\theta) + \alpha(sign(\theta_1),\dots,sign(\th
 의 식에 사용하면 모든 경우에서 함수값을 갖기 때문에 ​​무리 없이 경사 하강법을 적용하여 Lasso에서의 $\theta$를 찾을 수 있다.
 
 # Lasso 의 기하학적 의미
+
 
 <p align = "center">
   <img width = "500" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/manim/Lasso_ellipse.gif?raw=true">

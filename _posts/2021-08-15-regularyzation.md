@@ -164,7 +164,7 @@ $=E\left[X^2\right]-E\left[X\right]^2$​​​ <br>우선 위식과 같이 분�
 
 최소제곱법과 정규화의 관점의 차이를 간단하게 다시 이야기하자면 최소제곱법은 $\theta$​가 어떤 값이 되던 error을 최소화 하겠다는 것이고 정규화는 error을 최소화 하겠다는 목적도 갖지만 $\theta$​에 대한 분산도 같이 고려하겠다는 것이다.
 
-## Ridge
+# Ridge
 
 ridge 회귀는 간단히 비용함수에 $\alpha\sum_i^n\theta_i^2$ 항이 추가된 선형 회귀이다. 
 
@@ -195,7 +195,7 @@ ridge 회귀는 간단히 비용함수에 $\alpha\sum_i^n\theta_i^2$ 항이 추�
 
 그렇기 때문에 $\alpha$​가 100일 때와 $\alpha$​​가 1일 때 더 수평선 형태가 되는 것이다.
 
-## Ridge의 기하학적 의미
+# Ridge의 기하학적 의미
 
 만약 우리가 찾아야하는 회귀계수 벡터를  $\theta_0 ,\theta_1$ 라고 둔다면
 
@@ -222,10 +222,11 @@ $MSE(\theta_0,\theta_1)$ 은 $A\theta_0^2 + B\theta_0\theta_1 + C\theta_1^2 + D\
   <br>
   애니메이션2. MSE와 l2 norm
 </p>
+ 
 
-위 애니메이션이 정확하진 않지만 간단하게 생각한다면 저렇게 MSE 타원의 영역이 점점 커지고 규제항인 l2 norm은 고정되어 있다. 
+위 애니메이션과 같이 Ridge 에서 우리가 엄격하게 생각하는 것은 $\theta$ 값의 범위이다.
 
-즉, Ridge 에서 우리가 엄격하게 생각하는 것은 $\theta$의 값이고 이 목적은 다시 말하자면 $\theta$값들의 범위를 규제하여 $\theta$의 분포의 분산의 증가를 막고 이러한 분산의 감소를 막음으로써 모델의 훈련데이터에 대한 과대적합을 막는 것이다.
+이 목적은 다시 말하자면 $\theta$값들의 범위를 규제하여 $\theta$의 분포의 분산의 증가를 막고 이러한 분산의 감소를 막음으로써 모델의 훈련데이터에 대한 과대적합을 막는 것이다.
 
 선형 회귀와 마찬가지로 릿지 회귀도 정규방정식을 통해 계산할 수 있으며 또한 경사 하강법을 사용할 수 있다. 
 
@@ -237,7 +238,7 @@ SGDRegressor(penalty = 'l2')
 
 원리는 똑같이 비용함수 공간에서 $\theta$​값을 찾아나가는 것이라고 생각하면 된다. 
 
-## Lasso
+# Lasso
 
 Lasso 회귀도 선형 회귀의 또 다른 규제 버전이다. 
 
@@ -256,7 +257,7 @@ $g(\theta,J) = \nabla_{\theta}MSE(\theta) + \alpha(sign(\theta_1),\dots,sign(\th
 
 의 식에 사용하면 모든 경우에서 함수값을 갖기 때문에 ​​무리 없이 경사 하강법을 적용하여 Lasso에서의 $\theta$를 찾을 수 있다.
 
-## Lasso 의 기하학적 의미
+# Lasso 의 기하학적 의미
 
 <p align = "center">
   <img width = "500" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/manim/Lasso_ellipse.gif?raw=true">

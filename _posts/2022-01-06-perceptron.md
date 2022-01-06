@@ -1,3 +1,17 @@
+---
+title: 퍼셉트론
+sidebar:
+  nav: docs-ko
+toc: true
+toc_sticky: true
+categories:
+  - 딥러닝
+key: 20220106
+tags: 
+  -딥러닝
+use_math: true
+---
+
 ### 들어가기 앞서,
 
 내용이 조금 길 수 있다.

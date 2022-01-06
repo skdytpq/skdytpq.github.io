@@ -56,3 +56,5 @@ docs-ko:
     children:
       - title:  퍼셉트론
         url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/perceptron/
+      - title:  Back-Propagation
+        url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/BackPropagation/ 

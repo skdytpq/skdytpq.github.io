@@ -223,13 +223,13 @@ $\sigma$ 는 sigmoid 나 ReLU와 같은 활성화 함수를 이야기하며 b �
 
 다시말해 
 
-$\frac{\partial C_0}{\partial W^{(L)}}$  = $\frac{\partial Z^{(L)}}{\partial W^{(L)}}\frac{\partial a^{(L)}}{\partial Z^{(L)}}\frac{{\partial C_0}}{\partial a^{(L)}}$
+$\frac{\partial C_0}{\partial W^{(L)}}$  = $\frac{\partial Z^{(L)}}{\partial W^{(L)}}\frac{\partial a^{(L)}}{\partial Z^{(L)}}\frac{\partial C_0}{\partial a^{(L)}}$
 
 이 되는 것이다.
 
 그럼 하나하나 씩 따라가보자. 
 
-$\frac{{\partial C_0}}{\partial a^{(L)}}$​ = $2(a^{(L)}-y)$​
+$\frac{\partial C_0}{\partial a^{(L)}}$​ = $2(a^{(L)}-y)$​
 
 $\frac{\partial a^{(L)}}{\partial Z^{(L)}}$​ = $\sigma^{\prime}(z^{(L)})$
 

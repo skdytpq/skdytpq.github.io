@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 categories:
   - 딥러닝
-key: 20220106
+key: 2022-01-06
 tags: 
   -딥러닝
 use_math: true

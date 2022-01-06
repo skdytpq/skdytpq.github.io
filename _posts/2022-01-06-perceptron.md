@@ -4,17 +4,17 @@ sidebar:
   nav: docs-ko
 toc: true
 toc_sticky: true
-layout : post
 categories:
   - 딥러닝
-key: 2022-01-06
+key: 20210815
 tags: 
-  -딥러닝
+  - 딥러닝
 use_math: true
 
 ---
 
-### 들어가기 앞서,
+
+# 들어가기 앞서,
 
 내용이 조금 길 수 있다.
 
@@ -28,7 +28,7 @@ use_math: true
 
 차후 살펴보겠지만 이후 나오는 신경망에서 	
 
-$ \pi(X=x) = \frac{1}{1+e^(-(\beta_0 + \beta_1X))}$  와 같은  sigmoid 함수 꼴과 비슷한 형식은 자주 나오게된다.
+$\pi(X=x) = \frac{1}{1+e^(-(\beta_0 + \beta_1X))}$  와 같은  sigmoid 함수 꼴과 비슷한 형식은 자주 나오게된다.
 
 <p align = "center">
   <img width = "400" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/logistic_4.png?raw=true">
@@ -37,7 +37,7 @@ $ \pi(X=x) = \frac{1}{1+e^(-(\beta_0 + \beta_1X))}$  와 같은  sigmoid 함수 
 </p>
 
 
-### 퍼셉트론(Perceptron)
+# 퍼셉트론(Perceptron)
 
 퍼셉트론(Perceptron)은 Frank Rosenblatt 가 1957년 제안한 초기 형태의 인공 신경망이다. 
 
@@ -80,7 +80,7 @@ $\begin{cases} 1 \ \ \ \ if \sum w_ix_i >\theta \\ 0 \ \ \ \ otherwise\end{cases
 
 여기서 중요한 사실은 이러한 단층 퍼셉트론은 **선형 분류**만 가능하다는 사실인데 나는 이러한 사실이 잘 이해가 안돼 조금 더 자세하게 설명 해 보려 한다.
 
-### 왜 선형분류만 가능한가?
+## 왜 선형분류만 가능한가?
 
 <p align = "center">
   <img width = "700" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/perceptron1/106.jpg?raw=true">
@@ -106,13 +106,14 @@ $\begin{cases} 1 \ \ \ \ if \sum w_ix_i >\theta \\ 0 \ \ \ \ otherwise\end{cases
 
 우리는 여기서 Binary Classificaion 을 한다고 할 때  활성화 함수를 $f$ 라고 두면 
 
-$f(z) = P(y=1|z)$ 라고 표현할 수 있다. 
+$$f(z) = P(y=1|z)$$ 라고 표현할 수 있다. 
 
-(여기서 $z = w_1x_1 + w_2x_2 + bias$ )
+(여기서 $$z = w_1x_1 + w_2x_2 + bias$$ )
 
 단층 퍼셉트론은 $z$​ 의 값을 조정하여 이렇게 표현된 $f(z)$ 의 영역 즉, Decision boundary 를 만드는 것이다. 
 
 여기서 $z$ 값에 따라서 $f$ 의 출력이 바뀌는데 만약 $P(y=1|z) > 0.5$ 일 때 $f$ 의 출력 값이 1이 된다면 우리는 특정 경계를 찾을 수 있다. 
+<br>
 
 ```python
 import matplotlib.pyplot as plt
@@ -149,7 +150,7 @@ plt.plot(x1,x2)
 </p>
 
 
-### 시점의 변환
+## 시점의 변환
 
 세상에는 여러가지 문제들이 있다. 이러한 문제를 풀 때 우리는 AND, OR 만을 이용해서 문제를 풀기엔 세상은 매우 복잡해서 XOR 과 같은 논리 문제도 해결을 해야한다. 
 
@@ -179,7 +180,7 @@ plt.plot(x1,x2)
 
 여기서 우리가 발견할 수 있는 매우 흥미로운 점은 각 축을 $AND(\bar{x_1},x_2)$​ , $AND(x_1,\bar{x_2})$​​ 로 바꾸니 XOR 문제가 선형분류로 풀 수 있는 형태처럼 보인다는 것이다.
 
-**만약 우리가 각 축을 잘 바꾸거나 input을 적절하게 잘 표현하면 XOR을 풀 수 있지 않을까? ** 하는 가정에서 출발해보자**
+**만약 우리가 각 축을 잘 바꾸거나 input을 적절하게 잘 표현하면 XOR을 풀 수 있지 않을까?  하는 가정에서 출발해보자**
 
 $AND(\bar{x_1},x_2)$​ 에 대해서 간단히 설명하자면 $AND(\bar{x_1},x_2)$​ 에서 $\bar{x_1}$​ 과 $x_2$​​가 1이라면 1 아니면 0 을 출력하는 함수이다. (negation of AND 라고 표현하겠다.  $\bar{x_1}$ 은 $x_1$ 의 부정)
 
@@ -209,7 +210,7 @@ $z(f(x_1,x_2) , g(x_1,x_2))$ 라고 표현할 수 있는데 이러한 표현으�
 
 그렇다면 우리가 해야 할 일은 무엇인가? 퍼셉트론의 층을 몇 개 더 쌓는 것이다. 위 예제와 같은 경우에는 퍼셉트론 층이 하나 더 있다고 생각하면 될 것이다.
 
-### 다층 퍼셉트론
+# 다층 퍼셉트론
 
 층을 하나 더 쌓는다는 이야기는 무엇일까?
 

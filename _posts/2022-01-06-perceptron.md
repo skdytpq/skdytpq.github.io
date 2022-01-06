@@ -4,6 +4,7 @@ sidebar:
   nav: docs-ko
 toc: true
 toc_sticky: true
+layout : post
 categories:
   - 딥러닝
 key: 2022-01-06

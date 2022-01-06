@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "MyPost"
+date:   2022-01-06
+categories: jekyll update
+---
+Hello World!
+<br>
+<b>Hello World!</b>
+<br>
+<i>Hello World!</i>
+<br>
+<u>Hello World!</u>
+<br>
+<b>[테디노트][tedinote]</b>
+<br>
+![sunny](/files/sunny_stag.jpg)
+<br>
+{% highlight html %}
+---
+layout: default
+---
+<div class="home">
+  <h1 class="page-heading">site.title</h1>
+  <ul class="post-list">
+      <li>
+        <span class="post-meta">post-meta</span>
+        <h3><a class="post-link">post-link<a></h3>
+        <br>
+      </li>
+  </ul>
+</div>
+{% endhighlight %}

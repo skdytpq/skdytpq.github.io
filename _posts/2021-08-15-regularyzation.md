@@ -5,10 +5,10 @@ sidebar:
 toc: true
 toc_sticky: true
 categories:
-  - 기초통계
+  - 머신러닝
 key: 20210815
 tags: 
-  -통계학
+  -머신러닝
 use_math: true
 
 ---

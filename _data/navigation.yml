@@ -52,3 +52,7 @@ docs-ko:
         url:    https://skdytpq.github.io/%EA%B8%B0%EC%B4%88%ED%86%B5%EA%B3%84/gradientdescent/
       - title:  정규화모델
         url:    https://skdytpq.github.io/%EA%B8%B0%EC%B4%88%ED%86%B5%EA%B3%84/regularyzation/
+  - title:      딥러닝 with python
+    children:
+      - title:  퍼셉트론
+        url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/perceptron/

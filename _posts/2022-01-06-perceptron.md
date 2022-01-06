@@ -76,7 +76,9 @@ $argmin_w \sum_i L(Y,f(x_i,w_i))$​​ 과 같은 Cost function을 갖고 가�
 
 위 그림은 단층 퍼셉트론에 적용시키는 활성화 함수 중 매우 단순한 step funtion을 적용시킨 것인데 식으로 표현하면 다음과 같다.
 
-$\begin{cases} 1 \ \ \ \ if \sum w_ix_i >\theta \\ 0 \ \ \ \ otherwise\end{cases}$ <br> (여기서 $\theta$는 0으로 표현 돼 있지만 임의로 설정 가능하다)​
+$\begin{cases} 1 \ \ \ \ if \sum w_ix_i >\theta \\ 0 \ \ \ \ otherwise\end{cases}$ 
+
+(여기서 $\theta$는 0으로 표현 돼 있지만 임의로 설정 가능하다)​
 
 여기서 중요한 사실은 이러한 단층 퍼셉트론은 **선형 분류**만 가능하다는 사실인데 나는 이러한 사실이 잘 이해가 안돼 조금 더 자세하게 설명 해 보려 한다.
 
@@ -104,11 +106,9 @@ $\begin{cases} 1 \ \ \ \ if \sum w_ix_i >\theta \\ 0 \ \ \ \ otherwise\end{cases
 
 다시 말해서 우리가 선형결합 꼴의 $w_1x_1 + w_2x_2 + bias$​​ 식을 퍼셉트론에 넘겨주게 된다면 활성화 함수를 거쳐 특정 임계값을 넘는다면 1로 출력을 하는 과정을 거친다. 
 
-우리는 여기서 Binary Classificaion 을 한다고 할 때  활성화 함수를 $f$ 라고 두면 
+우리는 여기서 Binary Classificaion 을 한다고 할 때  활성화 함수를 $f$ 라고 두면 $f(z) = P(y=1|z)$ 라고 표현할 수 있다. 
 
-$$f(z) = P(y=1|z)$$ 라고 표현할 수 있다. 
-
-(여기서 $$z = w_1x_1 + w_2x_2 + bias$$ )
+(여기서 $z = w_1x_1 + w_2x_2 + bias$ )
 
 단층 퍼셉트론은 $z$​ 의 값을 조정하여 이렇게 표현된 $f(z)$ 의 영역 즉, Decision boundary 를 만드는 것이다. 
 

@@ -5,10 +5,10 @@ sidebar:
 toc: true
 toc_sticky: true
 categories:
-  - 기초통계
+  - 딥러닝
 key: 20220106
 tags: 
-  -통계학
+  -딥러닝
 use_math: true
 ---
 

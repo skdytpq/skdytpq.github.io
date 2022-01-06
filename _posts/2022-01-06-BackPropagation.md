@@ -1,18 +1,18 @@
 ---
-title: Back-Propagation
+title: BACK-PROPAGATION
 sidebar:
   nav: docs-ko
 toc: true
 toc_sticky: true
-layout : post
 categories:
   - 딥러닝
-key: 2022-01-06
+key: 20210106
 tags: 
-  -딥러닝
+  - 딥러닝
 use_math: true
 
 ---
+
 
 # 개요
 

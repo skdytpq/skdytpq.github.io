@@ -54,16 +54,8 @@ $a_1^{(1)}$ 로 향하는 값은 총 몇개가 있을까? 어쨋든 은닉층의
 
 우리는 이러한 식의 표현을 행렬이라는 강력한 도구로 매우 손쉽게 표현할 수 있다.
 
-$a^{(1)} =$ 
-$$ \sigma\left[ \begin{matrix}    w_{00} & w_{01} & \cdots& w_{0n} \\
-\vdots \\  
-w_{n0} & w_{n1} & \cdots & w_{nn}\end{matrix} \right]
-\left[\begin{matrix}a_0^{(0)} \\ 
-\vdots 
-\\ a_n^{(0)}\end{matrix} \right] +
-\left[ \begin{matrix} b_0 \\ 
-\vdots \\ 
-b_n\end{matrix} \right] $$
+$a^{(1)} = \sigma[\left \begin{matrix}    w_{00} & w_{01} & \cdots& w_{0n} \\\vdots \\  w_{n0} & w_{n1} & \cdots & w_{nn}\end{matrix} \right][\left\begin{matrix}a_0^{(0)} \\ 
+\vdots \\ a_n^{(0)}\end{matrix}\right] +[\left \begin{matrix} b_0 \\ \vdots \\ b_n\end{matrix}\right] $
 
 위 식은 은닉층의 각각의 노드에 대한 모든 가중치를 담고있는 식이다. 
 

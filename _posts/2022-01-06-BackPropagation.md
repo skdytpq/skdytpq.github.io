@@ -9,7 +9,7 @@ categories:
 key: 20210106
 tags: 
   - 딥러닝
-use_math: true
+
 
 ---
 

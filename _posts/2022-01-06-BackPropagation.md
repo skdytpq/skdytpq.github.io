@@ -30,7 +30,7 @@ Forward 방식에서 우리는 예측값 $\hat{y}$ 를 내놓는다. 여기서 �
 
 이제 간단한 신경망에서 Forward 방식으로 어떻게 진행되는지 살펴보자
 
-여기서 $\sigma(\bold{x})$​​ 라는 활성화 함수를 사용한다고 해보자. 이 활성화 함수는 input 벡터의 값을 0과 1 사이로 Scaling 해준다고 이해할 수 있다.
+여기서 $\sigma(**x**)$​​ 라는 활성화 함수를 사용한다고 해보자. 이 활성화 함수는 input 벡터의 값을 0과 1 사이로 Scaling 해준다고 이해할 수 있다.
 
 <p align = "center">
   <img width = "300" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/backpropa/%EC%97%AD%EC%A0%84%ED%8C%8C1.png?raw=true">
@@ -54,11 +54,12 @@ $a_1^{(1)}$ 로 향하는 값은 총 몇개가 있을까? 어쨋든 은닉층의
 
 우리는 이러한 식의 표현을 행렬이라는 강력한 도구로 매우 손쉽게 표현할 수 있다.
 
-$$\bold{a^{(1)}} = \sigma\left[ \begin{matrix}    w_{00} & w_{01} & \cdots& w_{0n} \\    \vdots \\  w_{n0} & w_{n1} & \cdots & w_{nn}\end{matrix} \right]\left[\begin{matrix}a_0^{(0)} \\ \vdots \\ a_n^{(0)}\end{matrix} \right] +\left[ \begin{matrix} b_0 \\ \vdots \\ b_n\end{matrix} \right]$$​​
+$a^{(1)} =$ 
+$\sigma\left[ \begin{matrix}    w_{00} & w_{01} & \cdots& w_{0n} \\    \vdots \\  w_{n0} & w_{n1} & \cdots & w_{nn}\end{matrix} \right]\left[\begin{matrix}a_0^{(0)} \\ \vdots \\ a_n^{(0)}\end{matrix} \right] +\left[ \begin{matrix} b_0 \\ \vdots \\ b_n\end{matrix} \right]$
 
 위 식은 은닉층의 각각의 노드에 대한 모든 가중치를 담고있는 식이다. 
 
-줄여서 $\bold{a^{(1)}} = \sigma(\bold{w}\bold{a^{(0)}} + \bold{b})$​​ 라고 표현할 수 있다.  
+줄여서 $**a^{(1)}** = \sigma(**w** **a^{(0)}** + **b**)$ 라고 표현할 수 있다.  
 
 여기서 각 노드는 0과 1의 값을 비선형적으로 출력하며 이런 값은 다음 층에서 단순 합 된 선형 결합의 꼴로 또 묶인다. 
 
@@ -90,13 +91,13 @@ $$\bold{a^{(1)}} = \sigma\left[ \begin{matrix}    w_{00} & w_{01} & \cdots& w_{0
 
 # 경사하강법
 
-우리가 결국 구하는 것은 $\bold{a^{(1)}} = \sigma(\bold{w}\bold{a^{(0)}} + \bold{b})$​ 여기서의 최솟값을 갖는 행렬 $\bold{w}$​이다. 
+우리가 결국 구하는 것은 $**a^{(1)}** = \sigma(**{w}** **a^{(0)}** + **b**)$​ 여기서의 최솟값을 갖는 행렬 $**w**$​이다. 
 
 그렇다면 우리는 저 행렬 식 자체를 미분해서 그 것의 최솟값을 구할 수 있다. 
 
-선형 회귀 모델에서의 비용함수$MSE(\bold{X},h_{\theta}) = \frac{1}{m}\sum_{i=1}^m(\bold{\theta^T}\bold{x^{(i)}} - y^{(i)})^2$​ 를 구하는 과정을 다시한번 상기해보자.
+선형 회귀 모델에서의 비용함수$MSE(**X**,h_{\theta}) = \frac{1}{m}\sum_{i=1}^m(**\theta^T** **x^{(i)}** - y^{(i)})^2$​ 를 구하는 과정을 다시한번 상기해보자.
 
-우리는 여기서 적당한 미분을 통해서 정규방정식을 구할 수 있는데, 그 결과 $\hat{\theta} = (\bold{X^T}X)^{-1}\bold{X^T}\bold{y}$라고 표현 가능하다.
+우리는 여기서 적당한 미분을 통해서 정규방정식을 구할 수 있는데, 그 결과 $\hat{\theta} = (**X^TX**)^{-1} **X^T** **y**$라고 표현 가능하다.
 
 그렇다면 우리는 우리는 여기서 $\theta$를 직접 구할 수 있지 않은가? 
 

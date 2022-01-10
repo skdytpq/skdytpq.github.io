@@ -106,7 +106,9 @@ $$ \begin{cases} 1 \ \ \ \ if \sum w_ix_i >\theta \\ 0 \ \ \ \ otherwise \end{ca
 
 다시 말해서 우리가 선형결합 꼴의 $w_1x_1 + w_2x_2 + bias$​​ 식을 퍼셉트론에 넘겨주게 된다면 활성화 함수를 거쳐 특정 임계값을 넘는다면 1로 출력을 하는 과정을 거친다. 
 
-우리가 Binary Classificaion 을 한다고 할 때  활성화 함수를 $f$ 라고 두면 $f(z) = P(y=1|z)$ 라고 표현할 수 있다. (여기서 $z = w_1x_1 + w_2x_2 + bias$ )
+우리가 Binary Classificaion 을 한다고 할 때  활성화 함수를 $f$ 라고 두면 $f(z) = P(y=1\vert\z)$ 라고 표현할 수 있다. 
+
+(여기서 $z = w_1x_1 + w_2x_2 + bias$ )
 
 단층 퍼셉트론은 $z$​ 의 값을 조정하여 이렇게 표현된 $f(z)$ 의 영역 즉, Decision boundary 를 만드는 것이다. 
 

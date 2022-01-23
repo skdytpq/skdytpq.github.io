@@ -58,6 +58,6 @@ docs-ko:
         url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/perceptron/
       - title:  Back-Propagation
         url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/BackPropagation/ 
-      - title:  CNN(Convolutional-Neural-Network)
-        url :   https://skdytpq.github.io/%EA%B8%B0%EC%B4%88%ED%86%B5%EA%B3%84/CNN(Convolutional-Neural-Network)/#cnn%EC%9D%98-%EA%B5%AC%EC%A1%B0
+      - title:  CNN
+        url :   https://skdytpq.github.io/%EA%B8%B0%EC%B4%88%ED%86%B5%EA%B3%84/CNN(Convolutional-Neural-Network)/
        

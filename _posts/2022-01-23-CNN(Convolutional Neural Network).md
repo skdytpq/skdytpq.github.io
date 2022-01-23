@@ -182,7 +182,7 @@ CNN 에서 이런 문제는 더 심해진다. 통상 CNN 과정에서 하나의 
 또한 계산량을 줄이기 위해 한가지 연산을 추가적으로 사용하는데 이 것을 pooling(풀링) 이라 한다. 풀링은 Feature map 을 Down sampling 하여 계산량을 줄이는 방법이다.
 
 <p align = "center">
-  <img width = "400" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/perceptron1/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-01-06%20165516.png?raw=true">
+  <img width = "500" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/CNN1/1_Sh9e6Hzx8ZcOinuLvy8Fmw.png?raw=true">
   <br>
   그림 10. Max pooling
 </p>

@@ -182,10 +182,11 @@ CNN 에서 이런 문제는 더 심해진다. 통상 CNN 과정에서 하나의 
 또한 계산량을 줄이기 위해 한가지 연산을 추가적으로 사용하는데 이 것을 pooling(풀링) 이라 한다. 풀링은 Feature map 을 Down sampling 하여 계산량을 줄이는 방법이다.
 
 <p align = "center">
-  <img width = "500" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/CNN1/1_Sh9e6Hzx8ZcOinuLvy8Fmw.png?raw=true">
+  <img width = "600" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/CNN1/1_Sh9e6Hzx8ZcOinuLvy8Fmw.png?raw=true">
   <br>
   그림 10. Max pooling
 </p>
+
 
 풀링은 위 그림 처럼 진행되는데 위 그림과 같이 $2\times2$ 의 사이즈의 풀링을 거친다면 총 Feature map 의 크기에 $\frac{1}{4}$​ 크기가 되는 것이다. 위 연산은 총 4개의 값 중 최댓값을 추출하는 Max Pooling 이라는 방법인데 이 외에도 평균값을 추출하는 Average pooling 등 다양한 pooling 기법이 있다.
 

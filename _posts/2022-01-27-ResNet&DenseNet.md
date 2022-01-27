@@ -1,5 +1,5 @@
 ---
-title: Res NEt & Dense Net
+title: ResNet&DenseNet
 sidebar:
   nav: docs-ko
 toc: true
@@ -12,7 +12,7 @@ tags:
 use_math: true
 ---
 
-# Res Net & Dense Net
+# ResNet & DenseNet
 
 ### 들어가기 앞서
 

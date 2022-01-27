@@ -60,4 +60,6 @@ docs-ko:
         url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/BackPropagation/ 
       - title:  CNN
         url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/CNN(Convolutional-Neural-Network)/
+      - title: ResNet&DenseNet
+        url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/ResNet&DenseNet/
        

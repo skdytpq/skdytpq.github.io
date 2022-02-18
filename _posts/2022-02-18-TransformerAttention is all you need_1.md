@@ -1,3 +1,17 @@
+---
+title: Transformer : Attention is all you need
+sidebar:
+  nav: docs-ko
+toc: true
+toc_sticky: true
+categories:
+  - 딥러닝
+key: 20220218
+tags: 
+  - 딥러닝
+use_math: true
+
+---
 # Transformer:Attention is all you need
 
 게시글 그림에 대한 출처는 [1) 트랜스포머(Transformer) - 딥 러닝을 이용한 자연어 처리 입문 (wikidocs.net)](https://wikidocs.net/31379) 에서 참고하였습니다.

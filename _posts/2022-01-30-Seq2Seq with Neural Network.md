@@ -1,3 +1,17 @@
+---
+title: Seq2Seq
+sidebar:
+  nav: docs-ko
+toc: true
+toc_sticky: true
+categories:
+  - 딥러닝
+key: 20220130
+tags: 
+  -
+use_math: true
+
+---
 # Seq2Seq: Sequence to Sequence Learning with Neural Networks
 
 ## 들어가기 앞서

@@ -1,14 +1,14 @@
 ---
-title: Transformer : Attention is all you need
+title: Transformer
 sidebar:
   nav: docs-ko
 toc: true
 toc_sticky: true
 categories:
-  - 딥러닝
+  - 딥
 key: 20220218
 tags: 
-  - 딥러닝
+  -딥러닝
 use_math: true
 
 ---

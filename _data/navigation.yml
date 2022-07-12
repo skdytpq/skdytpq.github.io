@@ -68,3 +68,7 @@ docs-ko:
       - url :   https://skdytpq.github.io/Attention/
       - title: Transformer
       - url :   https://skdytpq.github.io/%EB%94%A5/TransformerAttention-is-all-you-need_1/
+  - title:      음성인식 with python
+    children:
+      - title:  히든마르코프모델(HMM)
+        url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/HiddenMarkovModel/

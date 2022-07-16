@@ -72,3 +72,5 @@ docs-ko:
     children:
       - title:  히든마르코프모델(HMM)
         url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/HiddenMarkovModel/
+      - title:  Source-Filter Model
+        url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/SourceFilterModel/

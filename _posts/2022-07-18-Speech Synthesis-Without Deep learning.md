@@ -51,7 +51,7 @@ Concatenative synthesis의 경우 Speech 데이터를 매우 작은 Unit 으로 
   <br>
   그림 1.class 별 별점
     <br>
-
+</p>
 
 
 ### Unit Selection

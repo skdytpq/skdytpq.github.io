@@ -70,7 +70,11 @@ docs-ko:
       - url :   https://skdytpq.github.io/%EB%94%A5/TransformerAttention-is-all-you-need_1/
   - title:      음성인식 with python
     children:
+      - title:  Audio Deep learning 서론 - 푸리에 변환
+        url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/%EC%9D%8C%EC%84%B1%ED%95%A9%EC%84%B1/Audio-Deeplearning-%EC%84%9C%EB%A1%A0/
       - title:  히든마르코프모델(HMM)
         url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/HiddenMarkovModel/
       - title:  Source-Filter Model
         url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/SourceFilterModel/
+      - title:  음성합성 - Without Deep Learning
+        url :   https://skdytpq.github.io/Speech-Synthesis-Without-Deep-learning/

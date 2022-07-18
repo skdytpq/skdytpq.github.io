@@ -219,9 +219,7 @@ $x(t)=a_0+\sum_{k=1}^\infty a_k\cos\left(\frac{2\pi k t}{T}\right)+\sum_{k=1}^{\
 
 $x(t)=a_0+\sum_{k=1}^\infty a_k \cos(\frac{2 \pi k t}{T})+\sum_{k=1}^{\infty} b_k \sin (\frac{2\pi k t}{T})$
 
-$=a_0+\sum_{k=1}^{\infty}(a_k\frac{\exp\left(j 2\pi k t/T\right)+\exp\left(-j2\pi k t/T\right)}{2}$
-
-$ + b_k\frac{\exp\left(j 2\pi k t/T\right)-\exp\left(-j 2\pi k t/T\right)}{2j})$
+$=a_0+\sum_{k=1}^{\infty}(a_k\frac{\exp\left(j 2\pi k t/T\right)+\exp\left(-j2\pi k t/T\right)}{2} + b_k\frac{\exp\left(j 2\pi k t/T\right)-\exp\left(-j 2\pi k t/T\right)}{2j})$
 
 $=a_0+\sum_{k=1}^{\infty}\left(\frac{a_k-jb_k}{2}\exp\left(j\frac{2\pi k t}{T}\right)+\frac{a_k+jb_k}{2}\exp\left(-j\frac{2\pi kt}{T}\right)\right)$
 
@@ -229,7 +227,7 @@ $=\sum_{k=-\infty}^{\infty}c_k\exp\left(j\frac{2\pi k t}{T}\right)$
 
 여기서 $c_k$는 $a_0, a_k, b_k$와 다음과 같은 관계를 갖는다고 볼 수 있다.
 
-$ c_k = \begin{cases}\frac{1}{2}(a_k-jb_k),&& k >0 ~~ a_0, && k = 0\\ \frac{1}{2}(a_k+jb_k), && k < 0 \end{cases} $
+$ c_k = \begin{cases} \frac{1}{2} (a_k-jb_k), && k >0 \\ a_0, && k = 0 \\ \frac{1}{2} (a_k+jb_k), && k < 0 \end{cases} $
 
 결론적으로 우리는 복소 삼각함수를 이용해 임의의 연속 신호 $x(t)$를 표현할 수 있다.
 

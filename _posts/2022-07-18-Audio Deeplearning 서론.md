@@ -179,8 +179,6 @@ Quantization 을 하기 위해 각 스탭마다의 값을 추출하기 위해 $\
 
 우선 -1~1 영역으로 Scailing 을 하여 Quantization 을 진행하는데, 그 이유는 Quantization 발생 시 필연적으로 생기는 Error Loss 를 줄이기 위함이다. 
 
-만약  
-
 이렇게 Quantization을 진행할 경우 음질은 떨어지지만 Light한 자료형을 얻을 수 있다.
 
 ### Fourier Series
@@ -221,21 +219,21 @@ $x(t)=a_0+\sum_{k=1}^\infty a_k\cos\left(\frac{2\pi k t}{T}\right)+\sum_{k=1}^{\
 
 $$x(t)=a_0+\sum_{k=1}^\infty a_k\cos\left(\frac{2\pi k t}{T}\right)+\sum_{k=1}^{\infty} b_k \sin\left(\frac{2\pi k t}{T}\right)$$
 
-$$=a_0+\sum_{k=1}^{\infty}(
-  a_k\frac{\exp\left(j 2\pi k t/T\right)+\exp\left(-j2\pi k t/T\right)}{2}$$
+$=a_0+\sum_{k=1}^{\infty}(
+  a_k\frac{\exp\left(j 2\pi k t/T\right)+\exp\left(-j2\pi k t/T\right)}{2}$
 
-$$ + b_k\frac{\exp\left(j 2\pi k t/T\right)-\exp\left(-j 2\pi k t/T\right)}{2j}
-)$$
+$ + b_k\frac{\exp\left(j 2\pi k t/T\right)-\exp\left(-j 2\pi k t/T\right)}{2j}
+)$
 
-$$=a_0+\sum_{k=1}^{\infty}\left(
+$=a_0+\sum_{k=1}^{\infty}\left(
   \frac{a_k-jb_k}{2}\exp\left(j\frac{2\pi k t}{T}\right)+\frac{a_k+jb_k}{2}\exp\left(-j\frac{2\pi kt}{T}\right)
-  \right)$$
+  \right)$
 
-$$=\sum_{k=-\infty}^{\infty}c_k\exp\left(j\frac{2\pi k t}{T}\right)$$
+$=\sum_{k=-\infty}^{\infty}c_k\exp\left(j\frac{2\pi k t}{T}\right)$
 
 여기서 $c_k$는 $a_0, a_k, b_k$와 다음과 같은 관계를 갖는다고 볼 수 있다.
 
-$$c_k = \begin{cases}\frac{1}{2}(a_k-jb_k),&& k >0 \\ a_0, && k = 0\\ \frac{1}{2}(a_k+jb_k), && k < 0 \end{cases}$$
+$c_k = \begin{cases}\frac{1}{2}(a_k-jb_k),&& k >0 \\ a_0, && k = 0\\ \frac{1}{2}(a_k+jb_k), && k < 0 \end{cases}$
 
 결론적으로 우리는 복소 삼각함수를 이용해 임의의 연속 신호 $x(t)$를 표현할 수 있다.
 

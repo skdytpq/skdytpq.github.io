@@ -50,7 +50,6 @@ Concatenative synthesis의 경우 Speech 데이터를 매우 작은 Unit 으로 
   <img width = "400" src = "https://github.com/skdytpq/skdytpq.github.io/blob/master/_pics/speechsynthesis/audio_%EA%B7%B8%EB%A6%BC4.png?raw=true">
   <br>
   그림 1.class 별 별점
-    <br>
 </p>
 
 

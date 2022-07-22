@@ -78,3 +78,5 @@ docs-ko:
         url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/SourceFilterModel/
       - title:  음성합성 - Without Deep Learning
         url :   https://skdytpq.github.io/Speech-Synthesis-Without-Deep-learning/
+      - title:  음성합성 - With Deep Learning
+        url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/Speech_Synthesis/

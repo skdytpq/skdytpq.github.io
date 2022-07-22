@@ -155,3 +155,5 @@ TTS에서는 이렇게 사람마다의 스타일을 성분화 하여 어떠한 �
 - VAE - Tacotron2 : Style을 Latent vector 를 통해 파악하겠다는 뜻이다. 
   - VAE Tacotron의 경우 기존 Fixed 된 Vector 를 뽑는 것과 다르게 Latent Vector 를 뽑기 때문에 보다 Stochastic하게 추정한다.
   - Unsupervised Learning 을 사용하기 때문에 이또한 어떤 Vector가 어떤 역할을 하는지 학습할 때는 알 수 없다.
+#### 참고자료
+https://www.youtube.com/watch?v=8MlntMp0OFM&list=PL9mhQYIlKEhfyZxdateDkmmpXbTLy_-MN&index=5

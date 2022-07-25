@@ -44,6 +44,8 @@ header:
 docs-ko:
   - title:      머신러닝 with python
     children:
+      - title:  분류(Classification)
+        url:    https://skdytpq.github.io/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/%EB%B6%84%EB%A5%98(Classification)/
       - title:  로지스틱 회귀
         url:    https://skdytpq.github.io/%EA%B8%B0%EC%B4%88%ED%86%B5%EA%B3%84/logistic/        
       - title:  선형회귀

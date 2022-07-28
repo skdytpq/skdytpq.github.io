@@ -205,7 +205,7 @@ $MSE(\theta_0,\theta_1)$
 
 = $\sum_{i}^{n} (y_i - \theta_{0} x_{i1} - \theta_{1} x_{i2})^2$
 
-= $(\sum_i^nx^2_{i1})\theta_0^2 + (\sum_i^2x_{i2}^2)\theta_1^2$ 
+= $(\sum_i^n x^2_{i1}) \theta_0^2 + (\sum_i^2 x_{i2}^2) \theta_1^2$ 
 
 $+ 2(\sum_i^nx_{i1}x_{i2})\theta_0\theta_1 -2(\sum_i^ny_ix_{i1})\theta_0$
 

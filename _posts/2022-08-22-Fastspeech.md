@@ -5,10 +5,11 @@ sidebar:
 toc: true
 toc_sticky: true
 categories:
-  - 음성합성
+  - 딥러닝
 key: 20220822
 tags: 
   - 딥러닝
+
 
 ---
 

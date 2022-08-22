@@ -1,5 +1,4 @@
 
-
 ---
 title: Fastspeech
 sidebar:
@@ -7,14 +6,14 @@ sidebar:
 toc: true
 toc_sticky: true
 categories:
-
-  - 기초통계
+  - 음성합성
 key: 20220822
 tags: 
-    -  음성합성
-use_math: true
+  - 딥러닝
+
 
 ---
+
 
 # Fastspeech
 

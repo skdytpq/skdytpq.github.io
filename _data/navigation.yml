@@ -76,7 +76,9 @@ docs-ko:
       - url :   https://skdytpq.github.io/Attention/
       - title: Transformer
       - url :   https://skdytpq.github.io/%EB%94%A5/TransformerAttention-is-all-you-need_1/
-      - title: ViVIT
+      - title: ViViT
+      - url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/ViVIT/
+      - title: Vit
       - url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/ViVIT/
   - title:      음성인식 with python
     children:

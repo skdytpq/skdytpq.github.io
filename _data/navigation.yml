@@ -76,6 +76,8 @@ docs-ko:
       - url :   https://skdytpq.github.io/Attention/
       - title: Transformer
       - url :   https://skdytpq.github.io/%EB%94%A5/TransformerAttention-is-all-you-need_1/
+      - title: ViVIT
+      - url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/ViVIT/
   - title:      음성인식 with python
     children:
       - title:  Audio Deep learning 서론 - 푸리에 변환

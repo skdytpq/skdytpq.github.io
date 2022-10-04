@@ -79,7 +79,7 @@ docs-ko:
       - title: ViViT
       - url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/ViVIT/
       - title: Vit
-      - url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/ViVIT/
+      - url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/VIT/
   - title:      음성인식 with python
     children:
       - title:  Audio Deep learning 서론 - 푸리에 변환

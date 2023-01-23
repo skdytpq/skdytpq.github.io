@@ -94,3 +94,7 @@ docs-ko:
         url :   https://skdytpq.github.io/%EB%94%A5%EB%9F%AC%EB%8B%9D/Speech_Synthesis/
       - title:  Fastspeech
         url :   https://skdytpq.github.io/Fastspeech/
+  - title:      베이지안 통계학 with python
+    children:
+     - title:   베이지안의 사고
+       url :    https://skdytpq.github.io/Fastspeech/
